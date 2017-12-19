@@ -1,0 +1,39 @@
+﻿SELECT *
+  FROM  ListItem
+ WHERE NOT EXISTS(SELECT Id FROM List WHERE ListItem.ListId = List.Id)
+ 
+SELECT List.Id, List.Name, ListItem.Item
+  FROM	 List
+  		,ListItem
+ WHERE	List.Id = ListItem.ListId
+
+DELETE FROM ListItem WHERE ListId = 95
+
+INSERT INTO List (Id, Name)
+VALUES
+ (null, 'Looking for thirty-two length 32 (or 40)')
+,(null, 'A List Item')
+,(null, 'Another List')
+,(null, 'Need another List')
+,(null, 'Oops - Need another one')
+,(null, 'Adding a new List')
+,(null, 'Another List')
+,(null, 'Need another one!')
+,(null, 'A List here...')
+,(null, 'Looking for thirty-two length 32 (or 40)')
+,(null, 'A List Item')
+,(null, 'Another List')
+,(null, 'Need another List')
+,(null, 'Oops - Need another one')
+,(null, 'Adding a new List')
+,(null, 'Another List')
+,(null, 'Need another one!')
+,(null, 'A List here...')
+,(null, 'A List Item')
+,(null, 'Another List')
+,(null, 'Need another List')
+,(null, 'Oops - Need another one')
+,(null, 'Adding a new List')
+,(null, 'Another List')
+,(null, 'Need another one!')
+,(null, 'A List here...')

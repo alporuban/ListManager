@@ -1,0 +1,27 @@
+﻿<nav:NavigationPage
+    x:Class="ListManager.Views.About"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ListManager.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:nav="using:ListManager.Views"      
+    mc:Ignorable="d">
+
+    <Grid HorizontalAlignment="Center" Margin="0,80">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20" />
+            <RowDefinition Height="24" />
+            <RowDefinition Height="24" />
+            <RowDefinition Height="24" />
+            
+        </Grid.RowDefinitions>
+        <TextBlock Name="ApplicationAbbreviation" Grid.Row="0" HorizontalAlignment="Center" />
+        <TextBlock Name="ApplicationName" Grid.Row="1" HorizontalAlignment="Center" />
+        <TextBlock Name="ApplicationVersion" Grid.Row="2" HorizontalAlignment="Center" />
+        <TextBlock Name="Vendor" Text="by AJPLive" Grid.Row="3" HorizontalAlignment="Center" />
+
+    </Grid>
+
+</nav:NavigationPage>
